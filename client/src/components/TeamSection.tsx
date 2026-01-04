@@ -3,6 +3,9 @@ import ceoImage from "@assets/generated_images/male_ceo_headshot.png";
 import ctoImage from "@assets/generated_images/female_cto_headshot.png";
 import analystImage from "@assets/generated_images/male_analyst_headshot.png";
 import strategistImage from "@assets/generated_images/female_strategist_headshot.png";
+import vinay from "@assets/generated_images/vinay.jpeg";
+import rishabh from "@assets/generated_images/rishabh.jpeg";
+import jainam from "@assets/generated_images/jainam.jpeg";
 
 // todo: remove mock functionality - replace with actual team data
 const teamMembers = [
@@ -11,7 +14,7 @@ const teamMembers = [
     title: "Chief Strategist",
     bio: "Expert in derivative strategies and quantitative research with a focus on risk-adjusted returns.",
     image:
-      "https://media.licdn.com/dms/image/v2/D4D03AQE1Vp-G6G-G5w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718222222222?e=1741219200&v=beta&t=example1",
+      "{rishabh}",
     linkedIn: "https://www.linkedin.com/in/rishabh-mehta-06b420279/",
   },
   {
@@ -19,15 +22,14 @@ const teamMembers = [
     title: "Chief Strategist",
     bio: "Specializes in algorithmic trading models and systematic market analysis.",
     image:
-      "https://media.licdn.com/dms/image/v2/D4D03AQE-Example2/profile-displayphoto-shrink_800_800/0/1718222222222?e=1741219200&v=beta&t=example2",
+      "{jainam}",
     linkedIn: "https://www.linkedin.com/in/jainam-jain-229050307/",
   },
   {
     name: "Vinay Khilwani",
     title: "Chief Technology Officer",
     bio: "Architect of high-performance trading infrastructure and quantitative execution systems.",
-    image:
-      "https://media.licdn.com/dms/image/v2/D4D03AQF-Example3/profile-displayphoto-shrink_800_800/0/1718222222222?e=1741219200&v=beta&t=example3",
+    image: "{vinay}",
     linkedIn: "https://www.linkedin.com/in/vok8/",
   },
 ];
