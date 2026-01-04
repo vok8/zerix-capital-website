@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import logoUrl from "@assets/generated_images/minimalist_geometric_capital_letter_z_logo.png";
+import logoUrl from "@assets/generated_images/zerix.jpeg";
 
 interface NavbarProps {
   transparent?: boolean;
