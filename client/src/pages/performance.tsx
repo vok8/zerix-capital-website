@@ -19,6 +19,12 @@ export default function Performance() {
   const { data: performanceResponse, isLoading: isLoadingPerformance } =
     useQuery<PerformanceResponse>({
       queryKey: ["/api/performance"],
+      queryFn: async () => {
+        return { data: [
+          { year: "2025", linearEdge: 11.52, benchmark: 1.01 },
+          { year: "2026", linearEdge: 0, benchmark: 0.59 },
+        ] };
+      },
     });
 
   const performanceData = performanceResponse?.data || [];
