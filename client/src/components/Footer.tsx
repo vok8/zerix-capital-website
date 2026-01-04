@@ -19,7 +19,7 @@ export default function Footer() {
           <div className="flex flex-col gap-4">
             <Link href="/#top" className="flex items-center gap-2" onClick={handleClick}>
               <div className="w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center">
-                <img src={logoUrl} alt="Zerix Capital Logo" className="w-6 h-6 object-cover" />
+                <img src={logoUrl} alt="Zerix Capital Logo" className="w-full h-full object-cover" />
               </div>
               {/* <span className="text-xl font-bold text-background">Zerix Capital</span> */}
             </Link>
