@@ -21,12 +21,10 @@ jobs:
       - name: Install dependencies
         # Now correctly runs in the root where package.json is located
         run: npm install
-        working-directory: .
 
       - name: Build project
         # This converts your React source into a 'dist' or 'build' folder
         run: npm run build
-        working-directory: .
 
       - name: Setup Staging
         # Consolidate everything into one folder for deployment
@@ -35,7 +33,6 @@ jobs:
           # 1. Copy the COMPILED files from your build output (e.g., dist/)
           # Check if your build tool outputs to 'dist' or 'build' and adjust below:
           cp -r dist/* staging/
-          cp index.html staging/
           # 2. Add .nojekyll to prevent MIME type errors
           touch staging/.nojekyll
 
