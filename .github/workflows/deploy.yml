@@ -33,6 +33,7 @@ jobs:
           # 1. Copy the COMPILED files from your build output (e.g., dist/)
           # Check if your build tool outputs to 'dist' or 'build' and adjust below:
           cp -r dist/* staging/
+          cp CNAME staging/
           # 2. Add .nojekyll to prevent MIME type errors
           touch staging/.nojekyll
 
