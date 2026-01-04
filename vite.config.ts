@@ -3,6 +3,10 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
+export default {
+  base: '/zerix-capital-website/',
+}
+
 export default defineConfig({
   plugins: [
     react(),
