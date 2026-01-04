@@ -21,10 +21,12 @@ jobs:
       - name: Install dependencies
         # Now correctly runs in the root where package.json is located
         run: npm install
+        working-directory: .
 
       - name: Build project
         # This converts your React source into a 'dist' or 'build' folder
         run: npm run build
+        working-directory: .
 
       - name: Setup Staging
         # Consolidate everything into one folder for deployment
