@@ -14,7 +14,7 @@ const teamMembers = [
     title: "Chief Strategist",
     bio: "Expert in derivative strategies and quantitative research with a focus on risk-adjusted returns.",
     image:
-      "{rishabh}",
+      {rishabh},
     linkedIn: "https://www.linkedin.com/in/rishabh-mehta-06b420279/",
   },
   {
@@ -22,14 +22,14 @@ const teamMembers = [
     title: "Chief Strategist",
     bio: "Specializes in algorithmic trading models and systematic market analysis.",
     image:
-      "{jainam}",
+      {jainam},
     linkedIn: "https://www.linkedin.com/in/jainam-jain-229050307/",
   },
   {
     name: "Vinay Khilwani",
     title: "Chief Technology Officer",
     bio: "Architect of high-performance trading infrastructure and quantitative execution systems.",
-    image: "{vinay}",
+    image: {vinay},
     linkedIn: "https://www.linkedin.com/in/vok8/",
   },
 ];
