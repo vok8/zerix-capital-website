@@ -2,6 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script type="text/javascript">
+  (function() {
+    var redirect = new URLSearchParams(window.location.search).get('p');
+    if (redirect) {
+      // Restore the URL without reloading the page
+      window.history.replaceState(null, null, '/' + redirect);
+    }
+  })();
+</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     <title>Zerix Capital - Turning Data into Direction</title>
     <meta name="description" content="Zerix Capital is a data-driven investment firm specializing in quantitative strategies. We turn complex data into clear investment direction." />
