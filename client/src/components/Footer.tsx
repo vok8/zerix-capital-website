@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { SiLinkedin, SiX } from "react-icons/si";
-import logoUrl from "@assets/generated_images/minimalist_geometric_capital_letter_z_logo.png";
+import logoUrl from "@assets/generated_images/zerix.jpeg";
 
 const handleClick = () => {
   const element = document.getElementById("top");
