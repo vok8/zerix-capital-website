@@ -116,23 +116,21 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
-          <div className="space-y-6">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
-              {contactInfo.map((item, index) => (
-                <Card key={index} className="h-full" data-testid={`card-contact-${item.label.toLowerCase()}`}>
-                  <CardContent className="p-6 flex items-start gap-4 h-full">
-                    <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <item.icon className="w-5 h-5 text-primary" />
-                    </div>
-                    <div className="flex flex-col flex-grow">
-                      <p className="text-sm font-medium text-muted-foreground mb-1">{item.label}</p>
-                      <p className="text-sm text-foreground whitespace-pre-line leading-relaxed">{item.value}</p>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+        <div className="w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {contactInfo.map((item, index) => (
+              <Card key={index} className="h-full" data-testid={`card-contact-${item.label.toLowerCase()}`}>
+                <CardContent className="p-6 flex flex-col items-center text-center gap-4 h-full">
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <item.icon className="w-6 h-6 text-primary" />
+                  </div>
+                  <div className="flex flex-col flex-grow">
+                    <p className="text-sm font-medium text-muted-foreground mb-2 uppercase tracking-wider">{item.label}</p>
+                    <p className="text-sm text-foreground whitespace-pre-line leading-relaxed">{item.value}</p>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </div>
