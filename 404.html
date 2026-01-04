@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Page Not Found</title>
+    <script type="text/javascript">
+        // Single Page Apps redirect from 404
+        // This script will redirect to the root index.html,
+        // preserving the path and hash for the client-side router to handle.
+        (function() {
+            var path = window.location.pathname.replace(/\/$/, "");
+            // Adjust the index path based on your repository name if needed.
+            // For example, if your repo is 'my-repo', the path might need to be '/my-repo/index.html'
+            var indexPath = '/index.html'; 
+            if (path.startsWith('/zerix-capital-website')) {
+                indexPath = '/zerix-capital-website/index.html';
+            }
+            
+            window.location.replace(window.location.origin + indexPath + window.location.search + window.location.hash);
+        })();
+    </script>
+</head>
+<body>
+    <p>Redirecting...</p>
+</body>
+</html>
