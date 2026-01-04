@@ -22,9 +22,9 @@ export default function TeamMember({ name, title, bio, image, linkedIn }: TeamMe
       <CardContent className="p-6 text-center">
         <Avatar className="w-24 h-24 mx-auto mb-4 border-2 border-border">
           <AvatarImage src={image} alt={name} className="object-cover" />
-          <AvatarFallback className="text-xl font-semibold bg-primary/10 text-primary">
+          {/* <AvatarFallback className="text-xl font-semibold bg-primary/10 text-primary">
             {initials}
-          </AvatarFallback>
+          </AvatarFallback> */}
         </Avatar>
         <h3 className="text-lg font-semibold text-foreground mb-1">{name}</h3>
         <p className="text-sm text-primary font-medium mb-3">{title}</p>
