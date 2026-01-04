@@ -60,10 +60,30 @@ export default function PerformanceChart({
     error: performanceError,
   } = useQuery<PerformanceResponse>({
     queryKey: ["/api/performance"],
+    queryFn: async () => {
+        return { data: [
+          { year: "2025", linearEdge: 11.52, benchmark: 1.01 },
+          { year: "2026", linearEdge: 0, benchmark: 0.59 },
+        ] };
+      },
   });
 
   const { data: strategiesResponse } = useQuery<StrategiesResponse>({
     queryKey: ["/api/strategies"],
+    queryFn: async () => {
+        return { data: [
+          {
+            id: "linearEdge",
+            name: "Linear Edge Strategy",
+            description:
+              "Our proprietary quantitative strategy focusing on structural market inefficiencies.",
+            sharpe: 1.42,
+            maxDrawdown: "-12.3%",
+            inceptionDate: "2025",
+            color: "hsl(220, 85%, 45%)",
+          },
+        ] };
+      },
   });
 
   const performanceData = performanceResponse?.data || [];
@@ -370,10 +390,30 @@ export function PerformanceChart2({
     error: performanceError,
   } = useQuery<PerformanceResponse>({
     queryKey: ["/api/performance2"],
+    queryFn: async () => {
+        return { data: [
+          { year: "2025", linearEdge: 11.52, benchmark: 1.01 },
+          { year: "2026", linearEdge: 11.52, benchmark: 1.78 },
+        ] };
+      },
   });
 
   const { data: strategiesResponse } = useQuery<StrategiesResponse>({
     queryKey: ["/api/strategies"],
+    queryFn: async () => {
+        return { data: [
+          {
+            id: "linearEdge",
+            name: "Linear Edge Strategy",
+            description:
+              "Our proprietary quantitative strategy focusing on structural market inefficiencies.",
+            sharpe: 1.42,
+            maxDrawdown: "-12.3%",
+            inceptionDate: "2025",
+            color: "hsl(220, 85%, 45%)",
+          },
+        ] };
+      },
   });
 
   const performanceData = performanceResponse?.data || [];
