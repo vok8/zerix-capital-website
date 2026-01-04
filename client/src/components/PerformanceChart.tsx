@@ -129,7 +129,7 @@ export default function PerformanceChart({
             </div>
           ))}
           {year === "2025" && (
-            <p className="text-[12px] text-primary mb-2">
+            <p className="text-[12px] text-foreground font-semibold mb-2">
               <br></br>9 Dec 2025 to EoY
             </p>
           )}
