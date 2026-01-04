@@ -153,7 +153,7 @@ export default function Navbar({ transparent = false }: NavbarProps) {
 
       {isOpen && (
         <div className="md:hidden bg-background border-b border-border">
-          <div className="px-6 py-4 space-y-4">
+          <div className="px-6 py-4 flex flex-col gap-4">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -169,7 +169,7 @@ export default function Navbar({ transparent = false }: NavbarProps) {
                 {link.label}
               </Link>
             ))}
-            <a href="#contact" onClick={() => setIsOpen(false)}>
+            <a href="#contact" onClick={() => setIsOpen(false)} className="pt-2">
               <Button className="w-full" data-testid="button-contact-mobile">
                 Contact Us
               </Button>
