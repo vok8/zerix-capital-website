@@ -1,0 +1,45 @@
+name: Build and Deploy
+on:
+  push:
+    branches: ["main"]
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        # Now correctly runs in the root where package.json is located
+        run: npm install
+
+      - name: Build project
+        # This converts your React source into a 'dist' or 'build' folder
+        run: npm run build
+
+      - name: Setup Staging
+        # Consolidate everything into one folder for deployment
+        run: |
+          mkdir -p staging
+          # 1. Copy the COMPILED files from your build output (e.g., dist/)
+          # Check if your build tool outputs to 'dist' or 'build' and adjust below:
+          cp -r dist/* staging/
+          # 2. Add .nojekyll to prevent MIME type errors
+          touch staging/.nojekyll
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './staging'
+
+      - name: Deploy
+        uses: actions/deploy-pages@v4
