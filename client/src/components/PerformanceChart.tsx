@@ -525,7 +525,7 @@ export function PerformanceChart2({
               </h2>
             </div>
             <p className="text-muted-foreground">
-              Cumulative returns (last updated: 2 Jan 2026)
+              Cumulative returns (last updated: 15 Feb 2026)
             </p>
           </div>
           {/* Commented out time range selection
