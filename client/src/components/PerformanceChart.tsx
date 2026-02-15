@@ -63,7 +63,7 @@ export default function PerformanceChart({
     queryFn: async () => {
         return { data: [
           { year: "2025", linearEdge: 11.52, benchmark: 1.01 },
-          { year: "2026", linearEdge: 0, benchmark: 0.59 },
+          { year: "2026", linearEdge: -0.012, benchmark: -0.027 },
         ] };
       },
   });
@@ -393,7 +393,7 @@ export function PerformanceChart2({
     queryFn: async () => {
         return { data: [
           { year: "2025", linearEdge: 11.52, benchmark: 1.01 },
-          { year: "2026", linearEdge: 11.52, benchmark: 1.78 },
+          { year: "2026", linearEdge: 10.18, benchmark: -0.015 },
         ] };
       },
   });
