@@ -195,7 +195,7 @@ export default function PerformanceChart({
               </h2>
             </div>
             <p className="text-muted-foreground">
-              Annual performance (last updated: 2 Jan 2026)
+              Annual performance (last updated: 15 Feb 2026)
             </p>
           </div>
           {/* Commented out time range selection
