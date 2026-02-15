@@ -28,7 +28,7 @@ export default function Home() {
                 Total Returns
               </h2>
               <p className="text-muted-foreground">
-                Consistent performance across market cycles
+                Consistent performance across market cycles (last updated: 15 Feb 2026)
               </p>
             </div>
             <Link href="/performance#top">
