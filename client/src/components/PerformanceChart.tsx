@@ -63,7 +63,7 @@ export default function PerformanceChart({
     queryFn: async () => {
         return { data: [
           { year: "2025", linearEdge: 11.52, benchmark: 1.01 },
-          { year: "2026", linearEdge: -0.012, benchmark: -0.027 },
+          { year: "2026", linearEdge: 0.032, benchmark: -15.22 },
         ] };
       },
   });
@@ -195,7 +195,7 @@ export default function PerformanceChart({
               </h2>
             </div>
             <p className="text-muted-foreground">
-              Annual performance (last updated: 15 Feb 2026)
+              Annual performance (last updated: 29 Mar 2026)
             </p>
           </div>
           {/* Commented out time range selection
@@ -393,7 +393,7 @@ export function PerformanceChart2({
     queryFn: async () => {
         return { data: [
           { year: "2025", linearEdge: 11.52, benchmark: 1.01 },
-          { year: "2026", linearEdge: 10.18, benchmark: -0.015 },
+          { year: "2026", linearEdge: 11.55, benchmark: -11.78 },
         ] };
       },
   });
@@ -525,7 +525,7 @@ export function PerformanceChart2({
               </h2>
             </div>
             <p className="text-muted-foreground">
-              Cumulative returns (last updated: 15 Feb 2026)
+              Cumulative returns (last updated: 29 Mar 2026)
             </p>
           </div>
           {/* Commented out time range selection
